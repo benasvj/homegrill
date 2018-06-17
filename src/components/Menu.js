@@ -9,7 +9,7 @@ const Menu = (props)=>{
         </div>
     });
     
-    let items; //kintamasis kad istraukt is salygos reiksme kuria paskui naudosim
+    let items; //kintamasis kad istraukt is salygos reiksme kuria paskui naudosiu
     if(props.menu){
         items = props.menu.map((item,i)=>{
             return <li onClick={()=>props.addOrder(item)} key={i}>{item.name} <span>{item.price} €</span></li>
